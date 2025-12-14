@@ -12,7 +12,7 @@ export default function HeroSection() {
             </p>
             <button className="
                         cursor-pointer rounded-md border border-white/80 px-6 py-3 text-white
-        font-semibold tracking-wide bg-white/10 hover:bg-white hover:text-black hover:shadow-xl hover:scale-105 transition-all duration-300 ">
+        font-semibold tracking-wide bg-white/10 active:bg-white active:text-black hover:bg-white hover:text-black hover:shadow-xl hover:scale-105 transition-all duration-300 ">
                 Grab a Cup
             </button>
         </div>
