@@ -94,7 +94,7 @@ export default function Destination() {
               text-white
               font-semibold
               tracking-wide
-              bg-white/10
+              bg-white/10 active:bg-white active:text-black
               hover:bg-white
               hover:text-black
               hover:shadow-xl
