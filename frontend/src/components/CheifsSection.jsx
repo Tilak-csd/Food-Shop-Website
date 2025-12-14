@@ -9,6 +9,7 @@ export default function ChefsSection() {
             <div className="w-52 h-52 rounded-full overflow-hidden mb-6">
               <img
                 src="./chef1.jpg"
+                loading="lazy"
                 alt="Head Chef"
                 className="w-full h-full object-cover"
               />
@@ -26,6 +27,7 @@ export default function ChefsSection() {
               <img
                 src="./chef2.jpg"
                 alt="Sous Chef"
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -42,6 +44,7 @@ export default function ChefsSection() {
               <img
                 src="./chef3.jpg"
                 alt="Pastry Chef"
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>

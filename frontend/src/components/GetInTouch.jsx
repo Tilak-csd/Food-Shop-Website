@@ -1,6 +1,6 @@
 export default function GetInTouch() {
   return (
-    <section className="w-full py-24 bg-gray-50">
+    <section id="getintouch" className="w-full py-24 bg-gray-50">
       <div className="max-w-5xl mx-auto px-4 text-center">
         
         {/* Heading */}

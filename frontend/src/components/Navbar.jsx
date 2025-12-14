@@ -19,7 +19,7 @@ export default function Navbar() {
     <div className="relative">
       {/* Navbar itself */}
       <div className="relative flex justify-between items-center h-[60px] w-full md:px-10 px-4 border-b md:border-0 border-gray-500 z-20">
-        <p className="cursor-pointer font-sans text-xl  md:text-2xl text-white font-bold">Tilak Gubhaju</p>
+        <p className="cursor-pointer font-sans text-xl  md:text-2xl text-white font-bold">Shrestha Café</p>
         {open ? (<CloseMenu setOpen={setOpen} />) : (<OpenMenu setOpen={setOpen} />)}
         {/* Desktop Menu Navbar */}
         <div className='hidden relative md:flex justify-center items-center gap-3 h-full px-5 rounded-t-xl'>
@@ -44,12 +44,12 @@ function NavLink() {
         <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
       </a>
       </li>
-      <li className=""><a href="#" class="group relative text-white transition duration-300">
+      <li className=""><a href="#menu" class="group relative text-white transition duration-300">
         Menu
         <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
       </a>
       </li>
-      <li className=""><a href="#" class="group relative text-white transition duration-300">
+      <li className=""><a href="#reservation" class="group relative text-white transition duration-300">
         Reservations
         <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
       </a>
@@ -59,7 +59,7 @@ function NavLink() {
         <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
       </a>
       </li>
-      <li className=""><a href="#" class="group relative text-white transition duration-300">
+      <li className=""><a href="#getintouch" class="group relative text-white transition duration-300">
         Locations
         <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
       </a>

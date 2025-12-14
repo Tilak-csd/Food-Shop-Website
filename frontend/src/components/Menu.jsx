@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Menu() {
     return (
-        <section className="w-full pt-20 pb-10 bg-white flex flex-col items-center justify-center gap-10">
+        <section id='menu' className="w-full pt-20 pb-10 bg-white flex flex-col items-center justify-center gap-10">
             <div className="max-w-6xl mx-auto grid gap-8 px-4 md:grid-cols-3">
 
                 {/* Card 1 */}
@@ -10,6 +10,7 @@ export default function Menu() {
                     <img
                         src="./coffee.jpg"
                         alt="Coffee"
+                        loading='lazy'
                         className="h-56 w-full object-cover"
                     />
                     <div className="p-6 text-center">
@@ -25,6 +26,7 @@ export default function Menu() {
                     <img
                         src="./cuisine.avif"
                         alt="Food"
+                        loading='lazy'
                         className="h-56 w-full object-cover"
                     />
                     <div className="p-6 text-center">
@@ -40,6 +42,7 @@ export default function Menu() {
                     <img
                         src="./desert.jpg"
                         alt="Desserts"
+                        loading='lazy'
                         className="h-56 w-full object-cover"
                     />
                     <div className="p-6 text-center">
