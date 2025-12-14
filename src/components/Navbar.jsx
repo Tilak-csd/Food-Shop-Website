@@ -30,7 +30,7 @@ export default function Navbar() {
       <div
         className={`absolute md:hidden flex justify-center items-center flex-col gap-5 top-[60px] left-0 w-full h-[calc(100vh-60px)] bg-gray-500 z-10 transition-all duration-500 ease-in-out text-black
           ${open ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full pointer-events-none'} `} >
-        <NavLink />
+        <MobileNavLink setOpen={setOpen} />
       </div>
     </div>
   );
@@ -39,29 +39,69 @@ export default function Navbar() {
 function NavLink() {
   return (
     <ul className="flex flex-col justify-center items-center gap-6 font-sans text-md md:flex-row md:h-[full]  ">
-      <li className=""><a href="#" class="group relative text-white transition duration-300">
+      <li className=""><a href="#" className="group relative text-white transition duration-300">
+        Home
+        <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      </li>
+      <li className=""><a href="#menu" className="group relative text-white transition duration-300">
+        Menu
+        <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      </li>
+      <li className=""><a href="#reservation" className="group relative text-white transition duration-300">
+        Reservations
+        <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      </li>
+      <li className=""><a href="#" className="group relative text-white transition duration-300">
+        News
+        <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      </li>
+      <li className=""><a href="#getintouch" className="group relative text-white transition duration-300">
+        Locations
+        <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      </li>
+      <div className='flex justify-center items-center gap-6'>
+        <a href=""   className="inline-flex items-center transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:opacity-90"><Facebook size={20} color='white' /></a>
+        <a href=""   className="inline-flex items-center transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:opacity-90"><Instagram size={20} color='white' /></a>
+        <a href=""   className="inline-flex items-center transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:opacity-90"><Twitter size={20} color='white' /></a>
+
+      </div>
+
+    </ul>
+  );
+}
+
+// Navlink for Mobile
+function MobileNavLink() {
+  return (
+    <ul className="flex flex-col justify-center items-center gap-6 font-sans text-md md:flex-row md:h-[full]  ">
+      <li className=""><a onClick={()=> setOpen(prev => !prev)} href="#" className="group relative text-white transition duration-300">
         Home
         <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
       </a>
       </li>
-      <li className=""><a href="#menu" class="group relative text-white transition duration-300">
+      <li className=""><a href="#menu" onClick={()=> setOpen(prev => !prev)} className="group relative text-white transition duration-300">
         Menu
         <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
       </a>
       </li>
-      <li className=""><a href="#reservation" class="group relative text-white transition duration-300">
+      <li className=""><a href="#reservation" onClick={()=> setOpen(prev => !prev)} className="group relative text-white transition duration-300">
         Reservations
         <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
       </a>
       </li>
-      <li className=""><a href="#" class="group relative text-white transition duration-300">
+      <li className=""><a href="#" onClick={()=> setOpen(prev => !prev)} className="group relative text-white transition duration-300">
         News
         <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
       </a>
       </li>
-      <li className=""><a href="#getintouch" class="group relative text-white transition duration-300">
+      <li className=""><a href="#getintouch" onClick={()=> setOpen(prev => !prev)} className="group relative text-white transition duration-300">
         Locations
-        <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+        <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
       </a>
       </li>
       <div className='flex justify-center items-center gap-6'>
