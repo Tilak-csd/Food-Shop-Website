@@ -22,7 +22,7 @@ export default function Navbar() {
       {/* Navbar itself */}
       <div className={`relative flex justify-between items-center h-[60px] w-full md:px-10 px-4 border-b md:border-0 border-gray-500 z-20 ${open ? 'bg-gray-500' : ''}`}>
         {/* Logo */}
-        <p className="cursor-pointer font-sans text-xl  md:text-2xl text-white font-bold">Shrestha Café</p>
+        <NavLink to='/' className="cursor-pointer font-sans text-xl  md:text-2xl text-white font-bold">Shrestha Café</NavLink>
         {/* Humburger for the mobile */}
         {open ? (<CloseMenu setOpen={setOpen} />) : (<OpenMenu setOpen={setOpen} />)}
         {/* Desktop Menu Navbar */}
@@ -51,10 +51,10 @@ function Navlink() {
           </NavLink>
         </li>
       })}
-      
+
       <div className='flex justify-center items-center gap-6'>
         <a href="" className="inline-flex items-center transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:opacity-90"><Facebook size={20} color='white' /></a>
-        <a href="" className="inline-flex items-center transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:opacity-90"><Instagram size={20} color='white' /></a>
+        <a href="https://www.instagram.com/solveatlas.agency?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target='_blank' className="inline-flex items-center transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:opacity-90"><Instagram size={20} color='white' /></a>
         <a href="" className="inline-flex items-center transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:opacity-90"><Twitter size={20} color='white' /></a>
 
       </div>
@@ -71,14 +71,14 @@ function MobileNavlink({ setOpen }) {
         return <li key={idx}>
           <NavLink to={links.to} onClick={() => setOpen(prev => !prev)} className="group relative text-white transition duration-300">
             {links.title}
-            <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
           </NavLink>
         </li>
       })}
 
       <div className='flex justify-center items-center gap-6'>
         <a href="" className="inline-flex items-center transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:opacity-90"><Facebook size={20} color='white' /></a>
-        <a href="" className="inline-flex items-center transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:opacity-90"><Instagram size={20} color='white' /></a>
+        <a href="https://www.instagram.com/solveatlas.agency?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target='_blank' className="inline-flex items-center transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:opacity-90"><Instagram size={20} color='white' /></a>
         <a href="" className="inline-flex items-center transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:opacity-90"><Twitter size={20} color='white' /></a>
 
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { menu } from '../data/menu';
 
-export default function Menu() {
+export default function Menucards() {
 
     return (
         <section id='menu' className="w-full pt-20 pb-10 bg-white flex flex-col items-center justify-center gap-10">
@@ -27,8 +27,7 @@ export default function Menu() {
 
             </div>
 
-            <button className="
-                        cursor-pointer rounded-full border border-black/80 px-6 py-3 text-black
+            <button className="cursor-pointer rounded-full border border-black/80 px-6 py-3 text-black
         font-semibold tracking-wide bg-white/10 active:bg-black active:text-white hover:bg-black hover:text-white hover:shadow-xl hover:scale-105 transition-all duration-300 ">
                 View Menu
             </button>

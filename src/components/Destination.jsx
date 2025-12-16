@@ -68,7 +68,7 @@ export default function Destination() {
                     <motion.h1
                         variants={fadeUp}
                         transition={{ duration: 0.6 }}
-                        className="font-bold text-5xl md:text-6xl lg:text-7xl text-center text-white leading-tight max-w-4xl"
+                        className="section-heading-title text-white"
                     >
                         EAT TOGETHER
                     </motion.h1>
@@ -86,21 +86,7 @@ export default function Destination() {
                         variants={fadeUp}
                         whileHover={{ scale: 1.05 }}
                         transition={{ duration: 0.4 }}
-                        className="
-              cursor-pointer
-              rounded-full
-              border border-white/80
-              px-6 py-3
-              text-white
-              font-semibold
-              tracking-wide
-              bg-white/10 active:bg-white active:text-black
-              hover:bg-white
-              hover:text-black
-              hover:shadow-xl
-              transition-all
-            "
-                    >
+                        className="curved-button">
                         Make a Reservation
                     </motion.button>
                 </motion.div>
