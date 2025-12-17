@@ -2,6 +2,9 @@ import React from 'react'
 
 
 export default function Contact() {
+    const querysumbit = ()=>{
+        alert("Thanks for visiting us. However, the website is still under the developmnet phase.")
+    }
     return (
         <section id='contact' className="w-full py-20 bg-gray-50 flex flex-col items-center justify-center">
             <div className="max-w-6xl mx-auto w-full px-4">
@@ -13,7 +16,7 @@ export default function Contact() {
                         
                         {/* Location details */}
                         <div>
-                            <h4 className="text-xl font-semibold text-gray-800 mb-4">Visit Our Cafe</h4>
+                            <h4 className="text-2xl font-semibold text-gray-800 mb-4">Our Contact</h4>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-600">
                                 <div>
                                     <p className="font-medium text-gray-900">Address</p>
@@ -42,7 +45,7 @@ export default function Contact() {
                                     className='border border-gray-200 rounded-lg p-3 focus:ring-2 focus:ring-black focus:outline-none transition-all'
                                 ></textarea>
                             </div>
-                            <button className='bg-black cursor-pointer active:bg-gray-800 hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md'>
+                            <button onClick={querysumbit} className='bg-black cursor-pointer active:bg-gray-800 hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md'>
                                 Send Message
                             </button>
                         </form>
