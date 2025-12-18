@@ -4,6 +4,7 @@ import React from 'react'
 export default function Contact() {
     const querysumbit = ()=>{
         alert("Thanks for visiting us. However, the website is still under the developmnet phase.")
+        return;
     }
     return (
         <section id='contact' className="w-full py-20 bg-gray-50 flex flex-col items-center justify-center">

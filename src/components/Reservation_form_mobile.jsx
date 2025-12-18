@@ -54,7 +54,7 @@ export default function Reservation_form_mobile() {
             </SelectField>
 
             {/* Action Button */}
-            <button onClick={reservation} className="w-full lg:w-auto bg-black hover:bg-gray-700 text-white font-bold px-12 py-4 rounded-2xl transition-all duration-300 whitespace-nowrap text-lg shadow-lg shadow-black hover:scale-[1.02] active:scale-95">
+            <button onClick={reservation} className="w-full lg:w-auto bg-black hover:bg-gray-700 text-white font-bold px-12 py-4 rounded-2xl transition-all duration-300 whitespace-nowrap text-lg hover:scale-[1.02] active:scale-95 cursor-pointer">
                 Reserve Now
             </button>
         </div>
