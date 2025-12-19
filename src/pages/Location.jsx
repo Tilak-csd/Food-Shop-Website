@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import HeroSection from '../components/HeroSection'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import Chatbot from '../components/ChatBot/ChatBot'
 
 export default function Location() {
     return (
@@ -14,6 +15,7 @@ export default function Location() {
             </Header_sub>
             <Contact />
             <Footer />
+            <Chatbot />
         </>
     )
 }

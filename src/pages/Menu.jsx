@@ -4,6 +4,8 @@ import HeroSection from '../components/HeroSection'
 import Menu_cards from '../components/Menu_cards'
 import Footer from '../components/Footer'
 import Header_sub from '../components/Header_sub'
+import Chatbot from '../components/ChatBot/ChatBot'
+
 
 export default function Menu() {
     return (
@@ -14,6 +16,7 @@ export default function Menu() {
             </Header_sub>
             <Menu_cards />
             <Footer />
+            <Chatbot />
             
         </>
     )

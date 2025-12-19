@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar'
 import Reservation_HeroSection from '../components/Reservation_HeroSection'
 import Reservation_form_mobile from '../components/Reservation_form_mobile'
 import Footer from '../components/Footer'
+import Chatbot from '../components/ChatBot/ChatBot'
+
 
 export default function Reservation() {
     return (
@@ -14,6 +16,7 @@ export default function Reservation() {
             </Header>
             <Reservation_form_mobile />
             <Footer />
+            <Chatbot />
         </>
     )
 }

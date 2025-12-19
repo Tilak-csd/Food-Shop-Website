@@ -8,6 +8,7 @@ import ChefsSection from '../components/CheifsSection'
 import GetInTouch from '../components/GetInTouch'
 import Footer from '../components/Footer'
 import Menucards from '../components/Menucards'
+import Chatbot from '../components/ChatBot/ChatBot'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <ChefsSection />
       <GetInTouch />
       <Footer />
+      <Chatbot />
     </>
   )
 }
