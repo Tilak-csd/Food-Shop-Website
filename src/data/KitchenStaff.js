@@ -3,7 +3,7 @@ export const staff = [
         name : "Chef Aarav Sharma",
         position : "Head Chef",
         slogans : "Bringing refined technique and creative vision to every plate.",
-        image : "./chef1.jpg"
+        image : "./chef1.avif"
     },
     {
         name : "Chef Maya Khadka",
