@@ -48,7 +48,7 @@ export default function Reservation_HeroSection() {
                 </span>
             </div>
 
-            <div className="hidden lg:flex w-full max-w-7xl bg-white rounded-[2rem] shadow-2xl p-4 md:p-10 flex-wrap lg:flex-nowrap items-end gap-4 border border-gray-100">
+            <div className="hidden lg:flex w-full max-w-7xl bg-white rounded-3xl shadow-2xl p-4 md:p-10 flex-wrap lg:flex-nowrap items-end gap-4 border border-gray-100">
 
                 {/* Name */}
                 <InputField
