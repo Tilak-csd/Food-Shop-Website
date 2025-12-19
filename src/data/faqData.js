@@ -1,4 +1,4 @@
-export const faqData = [
+export const Faqdata = [
   {
     question: "Where is Shrestha Café located?",
     answer:

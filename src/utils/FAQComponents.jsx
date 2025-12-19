@@ -1,7 +1,6 @@
 // FAQ.jsx
 import { useState } from "react";
-import { faqData } from "../data/faqdata";
-
+import { Faqdata } from "../data/FaqData";
 export default function FAQ() {
     const [activeIndex, setActiveIndex] = useState(null);
 
@@ -21,7 +20,7 @@ export default function FAQ() {
             </div>
 
             <div className="space-y-3">
-                {faqData.map((item, index) => (
+                {Faqdata.map((item, index) => (
                     <div
                         key={index}
                         className="group border cursor-pointer border-gray-200 rounded-2xl transition-all duration-300 hover:border-black hover:shadow-md overflow-hidden"
