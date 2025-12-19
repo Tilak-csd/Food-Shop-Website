@@ -1,6 +1,9 @@
+import { NavLink } from "react-router";
+import {ArrowUpRight} from 'lucide-react'
+
 export default function GetInTouch() {
   return (
-    <section id="getintouch" className="w-full py-24 bg-gray-50">
+    <section id="getintouch" className="w-full py-15 bg-gray-50 flex justify-center items-center flex-col gap-10">
       <div className="max-w-5xl mx-auto px-4 text-center">
         
         {/* Heading */}
@@ -43,6 +46,7 @@ export default function GetInTouch() {
         </div>
 
       </div>
+      <NavLink to='/location' className='curved-button border-black text-black hover:bg-black hover:text-white flex'>Contact Us <ArrowUpRight /></NavLink>
     </section>
   );
 }
