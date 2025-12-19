@@ -1,6 +1,6 @@
 import React from 'react'
 import { menu_page } from '../data/menu'
-import PriceCard from '../utlis/PriceCard'
+import PriceCard from '../utils/PriceCard'
 import { NavLink } from 'react-router'
 
 export default function Menu_cards() {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { newsData } from '../data/news'
-import NewsCard from '../utlis/NewsCard'
-import FAQ from '../utlis/FAQCompnents'
+import NewsCard from '../utils/NewsCard'
+import FAQ from '../utils/FAQComponents'
 import { NavLink } from 'react-router'
 
 
