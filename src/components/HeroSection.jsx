@@ -9,7 +9,7 @@ export default function HeroSection({ showbutton = true, heading, text }) {
         <motion.div 
         initial={{opacity:0, y:20}}
         whileInView={{opacity:1, y:0}}
-        viewport={{once:false, amount:0.6}}
+        viewport={{once:true, amount:0.6}}
         transition={{duration:.6, ease:"easeOut"}}
 
         className="flex justify-center items-center text-white w-full h-[calc(100vh-60px)] flex-col gap-5">

@@ -2,7 +2,7 @@ export const menu = [
     {
         title: "Artisan Coffee",
         description: "Handcrafted brews made from carefully sourced premium beans.",
-        imageUrl: "./coffee.avif"
+        imageUrl: "./coffee1.avif"
     },
     {
         title: "Fresh Cuisine",

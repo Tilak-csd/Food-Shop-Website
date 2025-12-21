@@ -10,6 +10,7 @@ export default function Destination() {
             <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{once :true}}
                 transition={{ duration: 0.4, ease: "easeOut", delay: .2 }}
                 className="text-center font-bold text-3xl md:text-4xl xl:text-5xl mt-16"
             >
@@ -20,6 +21,7 @@ export default function Destination() {
             <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{once :true}}
                 transition={{ duration: 0.4, ease: "easeOut", delay: .2 }}
                 className="max-w-3xl mx-auto text-center leading-relaxed text-gray-600 px-4 mt-6"
             >
@@ -41,6 +43,7 @@ export default function Destination() {
                 <motion.div
                       initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{once :true}}
                         transition={{ duration: 0.4, ease: "easeOut", delay: .2 }}
 
                     className="relative z-20 h-full flex flex-col items-center justify-center gap-7 px-4"

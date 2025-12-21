@@ -14,6 +14,7 @@ export default function Menucards() {
                     return <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
                         transition={{ duration: 0.4, ease: "easeOut", delay: .2 }}
                         key={idx} className="rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
                         <img
@@ -32,14 +33,11 @@ export default function Menucards() {
 
             </div>
 
-            <motion.NavLink
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: .2 }}
+            <NavLink
                 to='/menu' className="cursor-pointer rounded-full border border-black/80 px-6 py-3 text-black
         font-semibold tracking-wide bg-white/10 active:bg-black active:text-white hover:bg-black hover:text-white hover:shadow-xl hover:scale-105 transition-all duration-300 ">
                 View Menu
-            </motion.NavLink>
+            </NavLink>
         </section>
     );
 }
