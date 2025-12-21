@@ -7,7 +7,7 @@ export default function GetInTouch() {
     <motion.section
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.6, ease: "easeOut", delay: .2 }}
       id="getintouch" className="w-full py-15 bg-gray-50 flex justify-center items-center flex-col gap-10">
       <div className="max-w-5xl mx-auto px-4 text-center">
 
@@ -53,5 +53,5 @@ export default function GetInTouch() {
       </div>
       <NavLink to='/location' className='curved-button border-black text-black hover:bg-black hover:text-white flex'>Contact Us <ArrowUpRight /></NavLink>
     </motion.section>
-  );
+  ); 
 }

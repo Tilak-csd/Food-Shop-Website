@@ -11,7 +11,7 @@ export default function ChefsSection() {
             return <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
+              transition={{ duration: 0.6, ease: "easeOut", delay : .2 }}
               key={idx} className="flex flex-col items-center">
               <div className="w-52 h-52 rounded-full overflow-hidden mb-6">
                 <img

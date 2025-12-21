@@ -9,7 +9,7 @@ export default function Kitchen() {
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, ease: "easeOut" }}
+                    transition={{ duration: 0.4, ease: "easeOut", delay: .2}}
                     className="font-bold text-center text-5xl text-white w-[90%] md:text-6xl leading-13 md:leading-15 lg:text-7xl lg:w-[70%] lg:leading-20">
                     THE KITCHEN
                 </motion.h1>
